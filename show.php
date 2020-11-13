@@ -45,6 +45,7 @@
 }
 </style>
 </head>
+
 <body>
 <?php
 $conn = mysqli_init();
@@ -76,6 +77,7 @@ while($Result = mysqli_fetch_array($res))
     <td><center><?php echo $Result['Name'];?></center></div></td>
     <td><center><?php echo $Result['Comment'];?></center></td>
     <td><center><?php echo $Result['Link'];?></center></td>
+    <td><center><button onclick="Delete()">Delete</button></center></td>
   </tr>
 <?php
 }
@@ -98,6 +100,11 @@ function myFunction() {
       }
     }       
   }
+}
+</script>
+<script>
+function Delete() {
+  document.getElementById("demo").innerHTML = "Hello World";
 }
 </script>
 </tbody>
