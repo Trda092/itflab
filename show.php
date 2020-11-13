@@ -27,7 +27,6 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
   </tr>
 </thead>
 <tbody>
-</tbody>
 
 <?php
 while($Result = mysqli_fetch_array($res))
@@ -41,6 +40,7 @@ while($Result = mysqli_fetch_array($res))
 <?php
 }
 ?>
+  </tbody>
 </table>
 <?php
 mysqli_close($conn);
