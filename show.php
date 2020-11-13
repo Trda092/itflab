@@ -18,10 +18,10 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
-<center><header style="font-size:300%;">Data table</header></center>
- <br>
+<header>Data table</header>
 <div class="container">
-<table class="table table-dark">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+<table class="table table-dark" id="myTable">
   <thead>
   <tr>
     <th width="100"> <div align="center">Name</div></th>
