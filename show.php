@@ -18,7 +18,7 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
-<center><header>Data table font-size: 40px;</header></center>
+<center><header style="font-size:300%;">Data table font-size: 40px;</header></center>
 <div class="container">
 <table class="table table-dark">
   <thead>
