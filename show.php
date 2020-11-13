@@ -31,10 +31,10 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 while($Result = mysqli_fetch_array($res))
 {
 ?>
-  <tr>
-    <center><td><?php echo $Result['Name'];?></div></td></center>
-    <center><td><?php echo $Result['Comment'];?></td></center>
-    <center><td><?php echo $Result['Link'];?></td></center>
+   <tr>
+    <td><center><?php echo $Result['Name'];?></center></div></td>
+    <td><center><?php echo $Result['Comment'];?></center></td>
+    <td><center><?php echo $Result['Link'];?></center></td>
   </tr>
 <?php
 }
