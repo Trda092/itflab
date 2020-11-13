@@ -102,10 +102,11 @@ function myFunction() {
   }
 }
 </script>
+<script src="jquery.min.js"></script>
 <script>
-function Delete() {
-  document.getElementById("demo").innerHTML = "Hello World";
-}
+  $('.table tbody').on('click','.btn',function(){
+    $(this).closest('tr').remove();
+  });
 </script>
 </tbody>
 </table>
