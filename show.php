@@ -60,7 +60,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 <div class="container">
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 <table class="table table-light" id="myTable">
-  <thead>
+  <thead class="thead-dark">
   <tr>
     <th width="100"> <div align="center">Name</div></th>
     <th width="250"> <div align="center">Comment </div></th>
