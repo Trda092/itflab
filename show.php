@@ -27,20 +27,19 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
   </tr>
 </thead>
 <tbody>
-
 <?php
 while($Result = mysqli_fetch_array($res))
 {
 ?>
   <tr>
-    <td><?php echo $Result['Name'];?></div></td>
-    <td><?php echo $Result['Comment'];?></td>
-    <td><?php echo $Result['Link'];?></td>
+    <center><td><?php echo $Result['Name'];?></div></td></center>
+    <center><td><?php echo $Result['Comment'];?></td></center>
+    <center><td><?php echo $Result['Link'];?></td></center>
   </tr>
 <?php
 }
 ?>
-  </tbody>
+</tbody>
 </table>
 <?php
 mysqli_close($conn);
