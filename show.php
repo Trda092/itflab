@@ -74,6 +74,7 @@ while($Result = mysqli_fetch_array($res))
 {
 ?>
    <tr id=<?php $Result['ID'];?>>
+   <td><center><?php echo $Result['ID'];?></center></div></td>
     <td><center><?php echo $Result['Name'];?></center></div></td>
     <td><center><?php echo $Result['Comment'];?></center></td>
     <td><center><?php echo $Result['Link'];?></center></td>
