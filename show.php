@@ -77,7 +77,7 @@ while($Result = mysqli_fetch_array($res))
     <td><center><?php echo $Result['Name'];?></center></div></td>
     <td><center><?php echo $Result['Comment'];?></center></td>
     <td><center><?php echo $Result['Link'];?></center></td>
-    <td><center><button onclick="myDeleteFunction()">Delete row</button></center></td>
+    <td><center><button onclick="myDeleteFunction(id)">Delete row</button></center></td>
   </tr>
 <?php
 }
