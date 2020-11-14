@@ -77,7 +77,7 @@ while($Result = mysqli_fetch_array($res))
     <td><center><?php echo $Result['Name'];?></center></div></td>
     <td><center><?php echo $Result['Comment'];?></center></td>
     <td><center><?php echo $Result['Link'];?></center></td>
-    <td><center><input type="button" value="Delete" onclick="deleteRow(this)"/></center></td>
+    <td><center><input id='button1' type="button" value="Delete"/></center></td>
   </tr>
 <?php
 }
@@ -103,10 +103,11 @@ function myFunction() {
 }
 </script>
 <script>
-     function deleteRow(row){
-      var d = row.parentNode.parentNode.rowIndex;
-      document.getElementById('myTable').deleteRow(d);
-   }
+ $(document).ready(function(){ 
+  $('#button1').click(function(){ 
+   $('tr').remove(); 
+   });
+});
 </script>
 </tbody>
 </table>
