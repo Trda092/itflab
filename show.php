@@ -73,7 +73,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 while($Result = mysqli_fetch_array($res))
 {
 ?>
-   <tr id=<?php echo $Result['ID'];?>>
+   <tr id=<?php $Result['ID'];?>>
     <td><center><?php echo $Result['Name'];?></center></div></td>
     <td><center><?php echo $Result['Comment'];?></center></td>
     <td><center><?php echo $Result['Link'];?></center></td>
