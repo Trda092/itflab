@@ -11,7 +11,7 @@
 <script>
  $(document).ready(function(){ 
   $('#button1').click(function(){ 
-   $('#'+id).remove(); 
+   $('#'+<?php echo $Result['ID'];?>).remove(); 
    });
 });
 </script>
@@ -80,7 +80,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 while($Result = mysqli_fetch_array($res))
 {
 ?>
-   <tr id=for (var i=1 ; i< table.rows.length; i++)>
+   <tr id=<?php echo $Result['ID'];?>>
    <td><center><?php echo $Result['ID'];?></center></div></td>
     <td><center><?php echo $Result['Name'];?></center></div></td>
     <td><center><?php echo $Result['Comment'];?></center></td>
