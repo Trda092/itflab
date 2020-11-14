@@ -73,7 +73,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 while($Result = mysqli_fetch_array($res))
 {
 ?>
-   <tr>
+   <tr id=<?php echo $Result['ID'];?>>
     <td><center><?php echo $Result['Name'];?></center></div></td>
     <td><center><?php echo $Result['Comment'];?></center></td>
     <td><center><?php echo $Result['Link'];?></center></td>
@@ -105,7 +105,7 @@ function myFunction() {
 <script>
  $(document).ready(function(){ 
   $('#button1').click(function(){ 
-   $('tr').remove(); 
+   $('#'+id).remove(); 
    });
 });
 </script>
