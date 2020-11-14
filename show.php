@@ -104,7 +104,8 @@ function myFunction() {
 </script>
 <script>
 function myDeleteFunction(id) {
-  document.getElementById("#"+id).remove();
+  var element =  document.getElementById("#"+id);
+  element.parentNode.removeChild(element)
 }
 
 // funtion Edit(id) {
