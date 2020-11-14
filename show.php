@@ -103,8 +103,8 @@ function myFunction() {
 }
 </script>
 <script>
-function myDeleteFunction() {
-  document.getElementById("myTable").deleteRow(id);
+function myDeleteFunction(id) {
+  document.getElementById("#"+id).remove();
 }
 </script>
 </tbody>
