@@ -77,7 +77,7 @@ while($Result = mysqli_fetch_array($res))
     <td><center><?php echo $Result['Name'];?></center></div></td>
     <td><center><?php echo $Result['Comment'];?></center></td>
     <td><center><?php echo $Result['Link'];?></center></td>
-    <td><center><button type="button" class="btn btn-danger">Remove</button></center></td>
+    <td><center><button type="button" class="btn btn-danger">Remove</button> <button>Edit</button></center></td>
   </tr>
 <?php
 }
@@ -102,11 +102,12 @@ function myFunction() {
   }
 }
 </script>
-<script src="jquery.min.js"></script>
 <script>
-  $('.table tbody').on('click','.btn',function(){
-    $(this).closest('tr').remove();
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").remove();
   });
+});
 </script>
 </tbody>
 </table>
