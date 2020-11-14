@@ -73,11 +73,11 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 while($Result = mysqli_fetch_array($res))
 {
 ?>
-   <tr id=<?php echo $Result['ID'];?>>
+   <tr id="<?php echo $Result['ID'];?>">
     <td><center><?php echo $Result['Name'];?></center></div></td>
     <td><center><?php echo $Result['Comment'];?></center></td>
     <td><center><?php echo $Result['Link'];?></center></td>
-    <td><center><button onclick="myDeleteFunction(id)">Delete row</button></center></td>
+    <td><center><button onclick="myDeleteFunction(<?php echo $Result['ID'];?>)">Delete row</button></center></td>
   </tr>
 <?php
 }
@@ -104,8 +104,12 @@ function myFunction() {
 </script>
 <script>
 function myDeleteFunction(id) {
-  document.getElementById("#+").remove();
+  document.getElementById("#"+id).remove();
 }
+
+// funtion Edit(id) {
+//   document.getElementById()
+// }
 </script>
 </tbody>
 </table>
