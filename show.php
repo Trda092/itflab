@@ -8,7 +8,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>
+<script>
  $(document).ready(function(){ 
   $('#button1').click(function(){ 
    $('#'+id).remove(); 
@@ -80,7 +80,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 while($Result = mysqli_fetch_array($res))
 {
 ?>
-   <tr id=<?php $Result['ID'];?>>
+   <tr id=for (var i=1 ; i< table.rows.length; i++)>
    <td><center><?php echo $Result['ID'];?></center></div></td>
     <td><center><?php echo $Result['Name'];?></center></div></td>
     <td><center><?php echo $Result['Comment'];?></center></td>
