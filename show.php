@@ -105,7 +105,7 @@ function myFunction() {
 <script>
      function deleteRow(row){
       var d = row.parentNode.parentNode.rowIndex;
-      document.getElementById('dsTable').deleteRow(d);
+      document.getElementById('myTable').deleteRow(d);
    }
 </script>
 </tbody>
