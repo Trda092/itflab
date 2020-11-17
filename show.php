@@ -77,7 +77,7 @@ while($Result = mysqli_fetch_array($res))
     <td><center><?php echo $Result['name'];?></center></div></td>
     <td><center><?php echo $Result['comment'];?></center></td>
     <td><center><?php echo $Result['link'];?></center></td>
-    <td><center><a href="delete.php?ID=<?php echo $Result['ID'];?>" class="btn btn-sm btn-danger mb-2 mb-md-0">DEL</a> <a href="edit.php?ID=<?php echo $Result['ID'];?>" class="btn btn-sm btn-dark">EDIT</a></td>
+    <td><center><a href="delete.php?ID=<?php echo $Result['id'];?>" class="btn btn-sm btn-danger mb-2 mb-md-0">DEL</a> <a href="edit.php?ID=<?php echo $Result['id'];?>" class="btn btn-sm btn-dark">EDIT</a></td>
   </tr>
 <?php
 }
