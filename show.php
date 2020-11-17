@@ -49,12 +49,12 @@
 <body>
 <?php
 $conn = mysqli_init();
-mysqli_real_connect($conn, 'server092.mysql.database.azure.com', 'Trda092@server092', 'Tadaohm1234', 'itflab', 3306);
+mysqli_real_connect($conn, 'servertest002.mysql.database.azure.com', 'Trda@servertest002', 'Tadaohm1234', 'pythondbs', 3306);
 if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
-$res = mysqli_query($conn, 'SELECT * FROM guestbook');
+$res = mysqli_query($conn, 'SELECT * FROM user');
 ?>
 <center><header style="font-size:300%;">Data table</header></center>
 <div class="container">
@@ -73,11 +73,11 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 while($Result = mysqli_fetch_array($res))
 {
 ?>
-   <tr id="<?php echo $Result['ID'];?>">
-    <td><center><?php echo $Result['Name'];?></center></div></td>
-    <td><center><?php echo $Result['Comment'];?></center></td>
-    <td><center><?php echo $Result['Link'];?></center></td>
-    <td><center><button onclick="myDeleteFunction(<?php echo $Result['ID'];?>)">Delete row</button></center></td>
+   <tr id="<?php echo $Result['id'];?>">
+    <td><center><?php echo $Result['name'];?></center></div></td>
+    <td><center><?php echo $Result['comment'];?></center></td>
+    <td><center><?php echo $Result['link'];?></center></td>
+    <td><center><a href="delete.php?ID=<?php echo $Result['ID'];?>" class="btn btn-sm btn-danger mb-2 mb-md-0">DEL</a> <a href="edit.php?ID=<?php echo $Result['ID'];?>" class="btn btn-sm btn-dark">EDIT</a></td>
   </tr>
 <?php
 }
