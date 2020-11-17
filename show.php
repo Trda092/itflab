@@ -112,7 +112,6 @@ function myFunction() {
 </tbody>
 </table>
 </div>
- <div class="col-6 text-right"><a href="form.php" class="btn btn-warning btn-sm font-weight-bold">ADD</a></div>
 <?php
 mysqli_close($conn);
 ?>
