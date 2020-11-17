@@ -79,6 +79,9 @@ while($Result = mysqli_fetch_array($res))
     <td><center><?php echo $Result['link'];?></center></td>
     <td><center><a href="delete.php?ID=<?php echo $Result['id'];?>" class="btn btn-sm btn-danger mb-2 mb-md-0">DEL</a> <a href="edit.php?ID=<?php echo $Result['id'];?>" class="btn btn-sm btn-dark">EDIT</a></td>
   </tr>
+<?php
+}
+?>
 <script>
 function myFunction() {
   var input, filter, table, tr, td, i, txtValue;
@@ -111,6 +114,10 @@ function myFunction() {
 </script>
 </tbody>
 </table>
+<div class="row">
+							<div class="col-6"><h1 class="text-monospace">Data</h1></div>
+							<div class="col-6 text-right"><a href="form.php" class="btn btn-warning btn-sm font-weight-bold">ADD</a></div>
+						</div>
 </div>
 <?php
 mysqli_close($conn);
