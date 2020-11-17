@@ -103,10 +103,10 @@ function myFunction() {
 }
 </script>
 <script>
-function myDeleteFunction(id) {
-  var element =  document.getElementById(id);
-  element.parentNode.removeChild(element)
-}
+// function myDeleteFunction(id) {
+//   var element =  document.getElementById(id);
+//   element.parentNode.removeChild(element)
+// }
 
 // funtion Edit(id) {
 //   document.getElementById()

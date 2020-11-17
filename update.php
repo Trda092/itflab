@@ -1,11 +1,17 @@
 <?php
-    $conn = mysqli_connect('servertest002.mysql.database.azure.com', 'Trda@servertest002', 'Tadaohm1234', 'pythondbs');
-    $sql = 'DELETE FROM user WHERE ID = '.$_GET['id'].'';
+    $conn = mysqli_connect('suphafang.mysql.database.azure.com', 'Trda@servertest002', 'Tadaohm1234', 'pythondbs');
+
+    $name = $_POST['name'];
+    $comment = $_POST['comment'];
+    $link = $_POST['link'];
+    $id = $_POST['id'];
+
+    $sql = 'UPDATE user SET name = "'.$name.'", comment = "'.$comment.'", link = "'.$link.'" WHERE ID = '.$id.'';
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Delete | 13th ITF LAB</title>
+    <title>Edit | 13th ITF LAB</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <style type="text/css">
@@ -23,10 +29,10 @@
                         <h2 align="center">
                         <?php
                             if(mysqli_query($conn, $sql)) {
-                                echo "DELETE COMPLETED";
+                                echo "EDIT COMPLETED";
                             }
                             else {
-                                echo "FAILED TO DELETE";
+                                echo "FAILED TO EDIT";
                             }
                         ?>
                         </h2>
