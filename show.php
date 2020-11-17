@@ -82,6 +82,7 @@ while($Result = mysqli_fetch_array($res))
 <?php
 }
 ?>
+  <div class="col-6 text-right"><a href="form.php" class="btn btn-warning btn-sm font-weight-bold">ADD</a></div>
 <script>
 function myFunction() {
   var input, filter, table, tr, td, i, txtValue;
