@@ -60,6 +60,7 @@ $res = mysqli_query($conn, 'SELECT * FROM user');
 <div class="container">
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 <table class="table" id="myTable">
+  <div class="col-6 text-right"><a href="form.php" class="btn btn-warning btn-sm font-weight-bold">ADD</a></div>
   <thead class="thead-dark">
   <tr>
     <th width="100"> <div align="center">Name</div></th>
@@ -82,7 +83,6 @@ while($Result = mysqli_fetch_array($res))
 <?php
 }
 ?>
-  <div class="col-6 text-right"><a href="form.php" class="btn btn-warning btn-sm font-weight-bold">ADD</a></div>
 <script>
 function myFunction() {
   var input, filter, table, tr, td, i, txtValue;
