@@ -114,6 +114,9 @@ function myFunction() {
 </script>
 </tbody>
 </table>
+<div class="row">
+  	<div class="col-6 text-right"><a href="form.php" class="btn btn-warning btn-sm font-weight-bold">ADD</a></div>
+</div>
 </div>
 <?php
 mysqli_close($conn);
