@@ -49,7 +49,7 @@
 <body>
 <?php
 $conn = mysqli_init();
-mysqli_real_connect($conn, 'servertest002.mysql.database.azure.com', 'Trda@servertest002', 'Tadaohm1234', 'pythondbs', 3306);
+mysqli_real_connect($conn, 'servertest002.mysql.database.azure.com', 'Trda@servertest002', 'Tadaohm1234', 'pythondbs', 1103);
 if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
@@ -114,9 +114,6 @@ function myFunction() {
 </script>
 </tbody>
 </table>
-<div class="row">
-	<div class="col-6 text-right"><a href="form.php" class="btn btn-warning btn-sm font-weight-bold">ADD</a></div>
-</div>
 </div>
 <?php
 mysqli_close($conn);
