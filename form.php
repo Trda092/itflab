@@ -34,7 +34,7 @@
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-sm btn-warning my-3 font-weight-bold">SUBMIT</button>
-                                <a class="btn btn-sm btn-light my-3" href="show.php">CANCLE</a>
+                                <a class="btn btn-sm btn-light my-3" href="show.php">CANCEL</a>
                             </div>
                         </form>
                     </div>
